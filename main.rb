@@ -13,7 +13,7 @@ while true
 
     if charging == true
         if value.negative?()
-            puts "Stop charging Car"
+            puts "Stop charging Car."
             plug.off
             charging = false
         end
@@ -21,7 +21,7 @@ while true
 
     if charging == false
         if !carValue.negative?()
-            puts "Starting charging"
+            puts "Starting charging."
             plug.on
             charging = true
         end
