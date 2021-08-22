@@ -11,20 +11,16 @@ while true
     value = request.inverter_power - request.house_power
     carValue = value - ENV.fetch('min_power_overflow').to_i
 
-    if charging == true
-        if value.negative?()
-            puts "Stop charging Car."
-            plug.off
-            charging = false
-        end
+    if value.negative?()
+        puts "Stop charging Car."
+        plug.off
+        charging = false
     end
 
-    if charging == false
-        if !carValue.negative?()
-            puts "Starting charging."
-            plug.on
-            charging = true
-        end
+    if !carValue.negative?()
+        puts "Starting charging."
+        plug.on
+        charging = true
     end
 
     puts "Dif of production and use: #{value} W"
