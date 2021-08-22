@@ -1,0 +1,13 @@
+version: "v2"
+
+services:
+  smartcar:
+    image: smartcar:latest
+    environment: 
+      - senec_host
+      - plug
+      - min_power
+      - interval
+    network_mode: host
+    privileged: true
+    restart: unless-stopped
