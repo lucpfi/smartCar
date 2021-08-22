@@ -2,7 +2,7 @@
 
 SmartCar collects from an senec Batterie all infos and if you had enough Energy Overflow it turns an TP-Link(https://www.amazon.de/TP-Link-Steckdose-funktionieren-erforderlich-Steuern/dp/B06W586CDZ/ref=mp_s_a_1_3?dchild=1&keywords=steckdose+tp+link+hs110&qid=1625588004&sprefix=steckdose+tp&sr=8-3) Power Switch on. It is written in Ruby and based on the ruby senec collector library (https://github.com/solectrus/senec) and on the hs1xx ruby library (https://github.com/adamcooke/hs1xx).
 
-If you use the Dockerimage on the Dockerhub (https://hub.docker.com/repository/docker/lucpfi/smartcar/general) you must setup 4 envoirment Variables.
+If you use the Docker Image on the Dockerhub (https://hub.docker.com/repository/docker/lucpfi/smartcar/general) you must setup 4 envoirment Variables.
 
 ````
 senec_host=<ip of the senec batterie>
